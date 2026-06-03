@@ -1,0 +1,72 @@
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-bottom: none;
+  padding: 0 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-muted);
+  height: 100%;
+  transition: var(--transition);
+  padding: 8px 0;
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+}
+
+.nav-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 4px;
+  transition: var(--transition);
+}
+
+/* Active State */
+.nav-link.active {
+  color: var(--accent-primary);
+}
+
+.nav-link.active .nav-icon-container {
+  background: rgba(139, 92, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active .nav-label {
+  font-weight: 700;
+}
+
+/* Ripple effect on click could be added here */
+.nav-link:active .nav-icon-container {
+  transform: scale(0.9);
+}

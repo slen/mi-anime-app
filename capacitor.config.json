@@ -1,0 +1,6 @@
+{
+  "appId": "com.anime.app",
+  "appName": "Anime App",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
